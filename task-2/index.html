@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Choice</title>
+</head>
+<body>
+    <button onclick="chooseflavor()">Choose Flavor</button>
+    <script>
+        var likeschocolate = false;
+        var likesvanilla = false;
+
+        function chooseflavor() {
+            if (likeschocolate  || likesvanilla) {
+                console.log("Here's your Icecream");
+                
+            }
+
+             else if (!likeschocolate  || !likesvanilla){
+                 console.log("Sorry, we don't have a flavor for you");
+                
+             }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple permission</title>
+</head>
+<body>
+   <script>
+    var inAdmin = false;
+    var inEditor = false;
+    var inModerator = false;
+
+    function allowaccess() {
+        if (inAdmin || inEditor || inModerator) {
+            console.log("Access Granted");    
+        }
+        else if (!inAdmin || !inEditor || !inModerator) {
+            console.log("Access Denied");
+            
+        }
+    }
+
+    allowaccess();
+   </script> 
+</body>
+</html>

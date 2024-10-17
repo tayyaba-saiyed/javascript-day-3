@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission check</title>
+</head>
+<body>
+    <button onclick="checkage()">Click ME</button>
+    <script>
+        var age = 15;
+        hasticket = false;
+
+        function checkage() {
+            if (age > 18  && hasticket == true) {
+                console.log("welcome");
+                
+            }
+            else if (age < 18 && hasticket == false){
+                console.log("sorry you cannot enter");
+            }
+        }
+    </script>
+</body>
+</html>

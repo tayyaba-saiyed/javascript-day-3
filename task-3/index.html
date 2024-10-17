@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item available</title>
+</head>
+<body>
+    <button onclick="checkitem()">Click ME</button>
+    <script>
+        var iteminStock = false;
+        var isSubscribed = false;
+
+        function checkitem() {
+            if (iteminStock && isSubscribed) {
+                console.log("you can purchare this item");
+                
+            }
+            else if (iteminStock ||  isSubscribed) {
+                console.log("this item is out of stock");
+                
+            }
+            else if (iteminStock || !isSubscribed) {
+                console.log("you need to be subscribed");
+                
+            }
+        }
+    </script>
+</body>
+</html>
